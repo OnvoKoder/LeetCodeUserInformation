@@ -1,0 +1,42 @@
+﻿@using LeetcodeUserInfo.Models.Leetcode
+@model UserProfileData
+@{
+    ViewData["Title"] = "Leetcode User Information";
+}
+
+<body>
+    <div class="area">
+        <div class="table">
+            <div class="preview">
+                <div class="logo-photo">
+                    <img src="~/images/leetcode_logo.png" alt="None" width="40">
+                </div>
+                <div class="username">@Model.MatchedUser.Username</div>
+            </div>
+            <div class="statictics">
+                <div class="progress-bar">
+                    <p class="progress-bar-info">@Model.MatchedUser.SubmitStats.AcSubmissionNum[0].Count</p>
+                    <progress value="@Model.MatchedUser.SubmitStats.AcSubmissionNum[0].Count" max="@Model.AllQuestionsCount[0].Count" style="visibility:hidden;height:0;width:0;"></progress>
+                </div>
+                <div class="list-task">
+                    <div class="easy">
+                        <p class="info">Easy @Model.MatchedUser.SubmitStats.AcSubmissionNum[1].Count/@Model.AllQuestionsCount[1].Count Beats @Model.MatchedUser.ProblemsSolvedBeatsStats[0].Percentage%</p>
+                        <progress id="easy-task" max="@Model.AllQuestionsCount[1].Count" value="@Model.MatchedUser.SubmitStats.AcSubmissionNum[1].Count"></progress>
+                    </div>
+                    <div class="middle">
+                        <p class="info">Middle @Model.MatchedUser.SubmitStats.AcSubmissionNum[2].Count/@Model.AllQuestionsCount[2].Count  Beats @Model.MatchedUser.ProblemsSolvedBeatsStats[1].Percentage%</p>
+                        <progress id="middle-task" max="@Model.AllQuestionsCount[2].Count" value="@Model.MatchedUser.SubmitStats.AcSubmissionNum[2].Count"></progress>
+                    </div>
+                    <div class="hard">
+                        <p class="info">Hard @Model.MatchedUser.SubmitStats.AcSubmissionNum[3].Count/@Model.AllQuestionsCount[3].Count  Beats @Model.MatchedUser.ProblemsSolvedBeatsStats[2].Percentage%</p>
+                        <progress id="hard-task" max="@Model.AllQuestionsCount[3].Count" value="@Model.MatchedUser.SubmitStats.AcSubmissionNum[3].Count"></progress>
+                    </div>
+                </div>
+            </div>
+            <div class="author">
+                <a href="https://github.com/OnvoKoder">Created by OnvoKoder</a>
+            </div>
+        </div>
+    </div>
+</body>
+

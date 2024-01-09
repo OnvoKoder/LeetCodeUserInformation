@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Leetcode User Information";
+}
+
+<div class="main-content">
+    <h1>LeetCode User Information</h1>
+    <form asp-action="LeetCodeView" asp-controller="Home" method="post">
+        <input class="input-field" name="username" type="text" placeholder="Enter username" />
+        <Button class="submit-btn" type="submit">Get Result</Button>
+    </form>
+</div>

@@ -1,0 +1,185 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+body {
+    background-color: #22b6dd;
+}
+
+/*for LeetcodeView*/
+.area {
+    width: 420px;
+    height: 270px;
+    background: rgba(0, 0, 0, .85);
+}
+
+.preview {
+    display: flex;
+    height: 30px;
+}
+
+.username {
+    position: relative;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+.statictics {
+    display: flex;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(orange 75%, gray 0);
+}
+
+.progress-bar-info {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.list-task {
+    left: 10%;
+    position: relative;
+}
+
+progress {
+    border-radius: 20px;
+    width: 250px;
+    height: 5px;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 20px;
+}
+
+.easy progress::-webkit-progress-value {
+    border-radius: 20px;
+    background-color: lightgreen;
+}
+
+.middle progress::-webkit-progress-value {
+    border-radius: 20px;
+    background-color: gold;
+}
+
+.hard progress::-webkit-progress-value {
+    border-radius: 20px;
+    background-color: tomato;
+}
+
+.info {
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 0 0 0;
+}
+
+.author {
+    margin-top: 10px;
+}
+
+.author a {
+    text-decoration: none;
+    color: rgba(255, 253, 253, 0.05);
+}
+/*for index*/
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px solid #dd4922;
+    font-size: 20px;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    position: relative;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    left: 33%;
+    background-color: #22b6dd;
+    margin: 2% auto;
+}
+
+.main-content {
+    max-width: 450px;
+    align-items: center;
+    background-color: whitesmoke;
+    position: relative;
+    margin: 2% auto;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.main-content h1 {
+    font-size: 30px;
+}
+
+@media (min-width: 350px) and (max-width: 405px) {
+    .submit-btn {
+        position: relative;
+        width: 200px;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 20px;
+        left: 21%;
+        background-color: #22b6dd;
+        margin: 2% auto;
+    }
+
+    .main-content h1 {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 350px) {
+    .submit-btn {
+        position: relative;
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 22px;
+        background-color: #22b6dd;
+        margin: 5% auto;
+        left: 7%;
+    }
+
+    .main-content h1 {
+        font-size: 22px;
+    }
+}
+/*for error*/
+.error {
+    max-width: 450px;
+    align-items: center;
+    background-color: whitesmoke;
+    position: relative;
+    margin: 2% auto;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.error p {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
